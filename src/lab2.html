@@ -11,7 +11,7 @@
 
 
 <button onclick="solutie();">Rezolvare</button>
-
+	<p id="delta"></p>
 	<p id="x1"></p>
 	<p id="x2"></p>
 
@@ -24,8 +24,26 @@
 		c=document.getElementById("c").value;
 		
 		var delta=b*b-4*a*c;
-		document.getElementById("x1").innerHTML=delta
-		a=document.getElementById("x2").innerHTML="abc";
+	    document.getElementById("delta").innerHTML="Delta="+delta
+		var x1_re, x1_im,x2_re,x2_im;
+		if(delta >= 0){
+			x1_re=(-b - Math.sqrt(delta))/(2*a);
+			x1_im=0;
+			x2_re=(-b+ Math.sqrt(delta)/(2*a));
+			x2_im=0;
+			  document.getElementById("x1").innerHTML="X1="+x1_re;
+			   document.getElementById("x2").innerHTML="X2="+x2_re;
+		}
+		else{
+			x1_re=(-b)/(2*a);
+			x1_im=-Math.sqrt(-delta)/(2*a);
+			x2_re=(-b)/(2*a);
+			x2_im=+Math.sqrt(-delta)/(2*a);
+			  document.getElementById("x1").innerHTML="X1_re="+x1_re.toString()+" x1_im="+x1_im.toString();
+			   document.getElementById("x2").innerHTML="X2_re="+x2_re.toString()+"x2_im="+x1_im.toString();
+		}
+	
+		
 
 	}
 </script>
