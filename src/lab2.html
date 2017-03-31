@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Laborator 2</title>
+</head>
+<body>
+<input type="text" id="a">
+<input type="text" id="b">
+<input type="text" id="c">
+
+
+
+<button onclick="solutie();">Rezolvare</button>
+
+	<p id="x1"></p>
+	<p id="x2"></p>
+
+<script>
+	
+	function solutie(){
+		var a,b,c;
+		a=document.getElementById("a").value;
+		b=document.getElementById("b").value;
+		c=document.getElementById("c").value;
+		
+		var delta=b*b-4*a*c;
+		document.getElementById("x1").innerHTML=delta
+		a=document.getElementById("x2").innerHTML="abc";
+
+	}
+</script>
+</body>
+</html>
