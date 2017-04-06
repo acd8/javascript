@@ -13,9 +13,9 @@ window.addEventListener("deviceorientation", on_device_orientation);
 
 function on_device_orientation(event)
 {
-  document.getElementById("x").innerHTML =Math.round(event.alpha);
-  document.getElementById("y").innerHTML = Math.round(event.beta);
-  document.getElementById("z").innerHTML = Math.round(event.gamma);
+  document.getElementById("x").innerHTML ="Alpha="+Math.round(event.alpha);
+  document.getElementById("y").innerHTML = "Beta="+Math.round(event.beta);
+  document.getElementById("z").innerHTML = "Gamma"+Math.round(event.gamma);
 }
 
 </script>
