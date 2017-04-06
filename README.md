@@ -1,4 +1,4 @@
-# Programe javascript
+# Programe javascript facute la scoala
 ## Programe telefoane mobile
 Program rezolvat o ecuatie de gradul 2
 ..
