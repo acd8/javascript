@@ -9,5 +9,3 @@ Program rezolvat o ecuatie de gradul 2
 Contact: Alexandru Donea
 E-mail: alex.donea92@gmail.com
 
-
-Abcdef
