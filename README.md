@@ -6,4 +6,5 @@ Program rezolvat o ecuatie de gradul 2
 ## Programare tablete
 ## Programare smartwatch
 
-Alexandru Donea
+Contact: Alexandru Donea
+E-mail: alex.donea92@gmail.com
