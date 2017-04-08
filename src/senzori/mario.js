@@ -1,5 +1,5 @@
 window.addEventListener("deviceorientation", on_device_orientation);
-
+var img=document.getElementById("img");
 function on_device_orientation(evt){
 	var alpha=evt.alpha;
 	var beta=evt.beta;
@@ -19,7 +19,7 @@ function on_device_orientation(evt){
   ctx.rotate(alpha*Math.PI/180);
   ctx.beginPath();
 //ctx.arc(centru.x +gamma*(canvas.width /2-raza), centru.y+beta*(canvas.height /2-raza), raza, 0, 2 * Math.PI);
-	ctx.rect(-laturaPatrat /2 + gamma * (canvas.width/2 -laturaPatrat * 0.71)/90, - laturaPatrat/2 + beta * (canvas.width/2 -laturaPatrat * 0.71)/90, laturaPatrat,laturaPatrat );
+	ctx.drawImage(img,-laturaPatrat /2 + gamma * (canvas.width/2 -laturaPatrat * 0.71)/90, - laturaPatrat/2 + beta * (canvas.width/2 -laturaPatrat * 0.71)/90 );
 ctx.stroke();
 
 }
